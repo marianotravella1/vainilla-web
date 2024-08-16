@@ -11,11 +11,9 @@ header {
   position: fixed;
   padding: 20px 0;
   background-color: #333;
-}
-
-header div {
   display: flex;
   justify-content: space-around;
+  height: 30px;
 }
 
 #logo {
