@@ -190,7 +190,7 @@ footer {
   margin: 0;
 }
 
-.team-member .btn {
+.boton-importante {
   background-color: #555;
   border-radius: 5px;
   border: none;
@@ -221,17 +221,38 @@ form {
   justify-content: space-around;
   flex-direction: column;
   gap: 10px;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 5px;
 }
 
 .datosa {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  height: 100px;
 }
-
-.name,
 .datos {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
+
+.email {
+  display: flex;
+  flex-direction: column;
+}
+
+input::placeholder {
+  color: white;
+}
+
+form input, form select, form textarea {
+  padding: 5px 3px;
+  background-color: black;
+  color: white;
+  border: white solid 1px;
+  border-radius: 4px;
+}
+
+

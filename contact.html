@@ -17,32 +17,50 @@
             <a href="./index.html">Inicio</a>
           </li>
           <li><a href="./about.html">Sobre Nosotros</a></li>
-          <li><a href="./contact.html"><span class="bold">Contacto</span></a></li>
+          <li>
+            <a href="./contact.html"><span class="bold">Contacto</span></a>
+          </li>
         </ul>
       </nav>
-  </header>
+    </header>
 
-    <section id="contact-page">
+    <main>
       <div class="contact-container">
         <h1>Formulario de Contacto</h1>
         <form action="#" method="post">
           <div class="datosa">
-            <div class="name">
-              <label for="nombre">Nombre:</label>
-              <input type="text" id="nombre" name="nombre" required />
-
-              <label for="apellido">Apellido:</label>
-              <input type="text" id="apellido" name="apellido" required />
-              <label for="fecha-nac">Fecha de Nacimiento:</label>
+            <div class="datos">
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                required
+                placeholder="Nombre"
+              />
+              <input
+                type="text"
+                id="apellido"
+                name="apellido"
+                required
+                placeholder="Apellido"
+              />
               <input type="date" id="fecha-nac" name="fecha-nac" required />
             </div>
             <div class="datos">
-              <label for="dni">DNI:</label>
-              <input type="text" id="dni" name="dni" required />
-
-              <label for="telefono">Teléfono:</label>
-              <input type="tel" id="telefono" name="telefono" required />
-              <label for="sexo">Sexo:</label>
+              <input
+                type="text"
+                id="dni"
+                name="dni"
+                required
+                placeholder="DNI"
+              />
+              <input
+                type="tel"
+                id="telefono"
+                name="telefono"
+                required
+                placeholder="Teléfono"
+              />
               <select id="sexo" name="sexo" required>
                 <option value="masculino">Masculino</option>
                 <option value="femenino">Femenino</option>
@@ -50,9 +68,10 @@
               </select>
             </div>
           </div>
-
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
+          <div class="email">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
 
           <label for="actividades">Actividad/es de interés:</label>
           <div id="actividades">
@@ -78,10 +97,13 @@
             cols="50"
           ></textarea>
 
-          <button type="submit">Enviar</button>
+          <button class="boton-importante" type="submit">Enviar</button>
         </form>
       </div>
-    </section>
+    </main>
+    <aside></aside>
+
+    <section id="contact-page"></section>
 
     <footer>
       <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
