@@ -32,7 +32,7 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0 5px;
+  margin: 0 10px;
 }
 
 nav ul li a {
@@ -52,7 +52,7 @@ nav ul li a {
 }
 
 .bold {
-  font-weight: 900;
+  font-weight: bold;
 }
 
 main {
