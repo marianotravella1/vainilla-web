@@ -42,7 +42,7 @@ nav ul li a {
   text-decoration: none;
   cursor: pointer;
   &:hover {
-    background-color: #007BFF;
+    background-color: #007bff;
   }
 
   &:active {
@@ -71,7 +71,7 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0; 
+  padding: 0;
   margin: 0;
   overflow: hidden;
 
@@ -79,7 +79,6 @@ main {
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: overlay;
 }
-
 
 .hero-image {
   object-fit: cover;
@@ -103,45 +102,64 @@ main {
 #services {
   display: flex;
   flex-direction: column;
-  background-color: #999999;
+  gap: 30px;
 }
 
 #services h2 {
-  margin: 20px;
+  font-size: 35px;
 }
 
 .service-item {
   display: flex;
-  background-color: #555;
-  margin: 20px 0;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  height: 400px;
+  background-color: #141414;
+  border-radius: 10px;
+  overflow: hidden;   
+
 }
 
 .service-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  flex: 1;
+  width: 50%;
 }
 
-.service-image{
-  flex: 1;
+.service-info h3 {
+
+  margin: 0 0 10px;
+  font-size: 3em;
 }
 
-.service-image img{
-  max-width: 100%;
-  border-radius: 10%;
+.service-info h4 {
+  margin: 0 0 10px;
+  font-size: 1.5em;
+}
+
+.service-info p {
+  margin: 20px 0;
+  font-size: 1em;
+}
+
+.service-image {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
 
 }
 
-.service-item img {
-  height: 100vh;
+.service-image img {
+  position: absolute;
   object-fit: cover;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
 }
 
-.service-item h3 {
-  margin-top: 10px;
-}
+
 
 .btn {
   color: #fff;
@@ -169,10 +187,6 @@ footer {
 
 /* ABOUT*/
 
-
-
-
-
 #team h2 {
   margin-left: 50px;
 }
@@ -199,7 +213,6 @@ footer {
   box-shadow: 10px 5px 5px red;
   transition: box-shadow 0.8s;
 }
-
 
 .profile-image-container {
   display: flex;
@@ -236,7 +249,7 @@ footer {
   font-size: large;
   transition: background-color 0.13s, opacity 0.13s;
   &:hover {
-    background-color: #007BFF;
+    background-color: #007bff;
   }
 
   &:active {
@@ -283,12 +296,12 @@ input::placeholder {
   color: white;
 }
 
-form input, form select, form textarea {
+form input,
+form select,
+form textarea {
   padding: 5px 3px;
   background-color: black;
   color: white;
   border: white solid 1px;
   border-radius: 4px;
 }
-
-
