@@ -100,17 +100,38 @@ main {
   margin: 10px 0;
 }
 
-.services {
+#services {
   display: flex;
   flex-direction: column;
+  background-color: #999999;
+}
+
+#services h2 {
+  margin: 20px;
 }
 
 .service-item {
   display: flex;
+  background-color: #555;
+  margin: 20px 0;
+}
+
+.service-info {
+  display: flex;
   flex-direction: column;
-  text-align: center;
+  justify-content: space-around;
   align-items: center;
-  
+  flex: 1;
+}
+
+.service-image{
+  flex: 1;
+}
+
+.service-image img{
+  max-width: 100%;
+  border-radius: 10%;
+
 }
 
 .service-item img {
