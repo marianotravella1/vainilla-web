@@ -59,7 +59,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 0px 60px;
+  padding: 0px 5vw;
 }
 
 .hero {
@@ -99,6 +99,19 @@ main {
   margin: 10px 0;
 }
 
+.btn {
+  color: #fff;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 7px;
+  &:hover {
+    background-color: #555;
+  }
+}
+
 #services {
   display: flex;
   flex-direction: column;
@@ -126,7 +139,6 @@ main {
 }
 
 .service-info h3 {
-
   margin: 0 0 10px;
   font-size: 3em;
 }
@@ -140,6 +152,20 @@ main {
   margin: 20px 0;
   font-size: 1em;
 }
+
+.service-info .btn {
+  padding: 15px 50px;
+  font-size: 20px;
+  &:hover {
+    background-color: #007bff;
+  }
+}
+
+.contact-button {
+  display: flex;
+  justify-content: center;
+}
+
 
 .service-image {
   width: 50%;
@@ -161,17 +187,6 @@ main {
 
 
 
-.btn {
-  color: #fff;
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #333;
-  text-decoration: none;
-  cursor: pointer;
-  &:hover {
-    background-color: #555;
-  }
-}
 
 #contact {
   background-color: #333;
