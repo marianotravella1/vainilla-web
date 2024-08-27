@@ -120,6 +120,7 @@ main {
 
 #services h2 {
   font-size: 35px;
+  margin-bottom: 0;
 }
 
 .service-item {
