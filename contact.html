@@ -25,85 +25,87 @@
     </header>
 
     <main>
-      <div class="contact-container">
-        <h1>Formulario de Contacto</h1>
-        <form action="#" method="post">
-          <div class="datosa">
-            <div class="datos">
-              <input
-                type="text"
-                id="nombre"
-                name="nombre"
-                required
-                placeholder="Nombre"
-              />
-              <input
-                type="text"
-                id="apellido"
-                name="apellido"
-                required
-                placeholder="Apellido"
-              />
-              <input type="date" id="fecha-nac" name="fecha-nac" required />
-            </div>
-            <div class="datos">
-              <input
-                type="text"
-                id="dni"
-                name="dni"
-                required
-                placeholder="DNI"
-              />
-              <input
-                type="tel"
-                id="telefono"
-                name="telefono"
-                required
-                placeholder="Teléfono"
-              />
-              <select id="sexo" name="sexo" required>
-                <option value="masculino">Masculino</option>
-                <option value="femenino">Femenino</option>
-                <option value="otro">Otro</option>
-              </select>
-            </div>
-          </div>
-          <div class="email">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-          </div>
+      <div class="contact-area">
+        <h1>¡Contactanos!</h1>
 
-          <label for="actividades">Actividad/es de interés:</label>
-          <div id="actividades">
-            <label
-              ><input type="checkbox" name="actividad" value="Gimnasio" />
-              Gimnasio</label
-            >
-            <label
-              ><input type="checkbox" name="actividad" value="Spinning" />
-              Spinning</label
-            >
-            <label
-              ><input type="checkbox" name="actividad" value="Natacion" />
-              Natación</label
-            >
+        <div class="contact-card">
+          <div class="page-img"></div>
+          <div class="page-form">
+            <form action="#" method="post">
+              <div class="datosa">
+                <div class="datos">
+                  <input
+                    type="text" 
+                    id="nombre"
+                    name="nombre"
+                    required
+                    placeholder="Nombre"
+                  />
+                  <input
+                    type="text"
+                    id="apellido"
+                    name="apellido"
+                    required
+                    placeholder="Apellido"
+                  />
+                  <input type="date" id="fecha-nac" name="fecha-nac" required />
+                </div>
+                <div class="datos">
+                  <input
+                    type="text"
+                    id="dni"
+                    name="dni"
+                    required
+                    placeholder="DNI"
+                  />
+                  <input
+                    type="tel"
+                    id="telefono"
+                    name="telefono"
+                    required
+                    placeholder="Teléfono"
+                  />
+                  <select id="sexo" name="sexo" required>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                  </select>
+                </div>
+              </div>
+              <div class="email">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <label for="actividades">Actividad/es de interés:</label>
+              <div id="actividades">
+                <label
+                  ><input type="checkbox" name="actividad" value="Gimnasio" />
+                  Gimnasio</label
+                >
+                <label
+                  ><input type="checkbox" name="actividad" value="Spinning" />
+                  Spinning</label
+                >
+                <label
+                  ><input type="checkbox" name="actividad" value="Natacion" />
+                  Natación</label
+                >
+              </div>
+
+              <label for="comentarios">Comentarios:</label>
+              <textarea
+                id="comentarios"
+                name="comentarios"
+                rows="4"
+                cols="50"
+              ></textarea>
+              <button class="boton-importante" type="submit">Enviar</button>
+            </form>
           </div>
-
-          <label for="comentarios">Comentarios:</label>
-          <textarea
-            id="comentarios"
-            name="comentarios"
-            rows="4"
-            cols="50"
-          ></textarea>
-
-          <button class="boton-importante" type="submit">Enviar</button>
-        </form>
+        </div>
       </div>
     </main>
-    <aside></aside>
-
-    <section id="contact-page"></section>
 
     <footer>
       <p>&copy; 2024 EnergyFit. Todos los derechos reservados.</p>
