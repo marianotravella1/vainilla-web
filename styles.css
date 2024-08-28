@@ -53,6 +53,7 @@ nav ul li a {
   color: var(--font-color);
   text-decoration: none;
   cursor: pointer;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.5);
   &:hover {
     background-color: #007bff;
   }
@@ -164,6 +165,7 @@ main {
   background-color: var(--secondary-color);
   border-radius: 10px;
   overflow: hidden;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .service-info {
@@ -182,12 +184,13 @@ main {
 
 .service-info p {
   margin: 20px 0;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 .service-info .btn {
   padding: 15px 50px;
   font-size: 20px;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.5);
   &:hover {
     background-color: #007bff;
   }
@@ -216,6 +219,7 @@ main {
 }
 
 #contact {
+  margin-top: 20px;
   background-color: var(--primary-color);
   text-align: center;
   padding: 40px 0;
@@ -336,6 +340,7 @@ h2 {
   border-radius: 15px;
   padding: 0;
   overflow: hidden;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 
