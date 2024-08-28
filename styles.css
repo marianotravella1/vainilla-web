@@ -1,9 +1,17 @@
-:root {
+[data-theme="dark"] {
   --primary-color: #333;
   --secondary-color: #141414;
   --tertiary-color: #555;
   --font-color: #fff;
   --opposite-color: #000;
+}
+
+[data-theme="light"] {
+  --primary-color: #d6d6d6;
+  --secondary-color: #bcbcbc;
+  --tertiary-color: #a1a1a1;
+  --font-color: #000;
+  --opposite-color: #fff;
 }
 
 body {
@@ -53,6 +61,25 @@ nav ul li a {
   }
 }
 
+header button {
+  border-radius: 50%;
+  border: none;
+  box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.3); 
+  cursor: pointer;
+  overflow: hidden;
+  &:hover {
+  box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.7); 
+  &:active {
+    opacity: 0.6;
+  }
+    
+  }
+}
+header button img{
+  width: 40px;
+  height: 40px;
+}
+
 .bold {
   font-weight: bold;
 }
@@ -95,11 +122,13 @@ main {
 .hero-text h2 {
   font-size: 2.5em;
   margin: 0;
+  color: #fff;
 }
 
 .hero-text p {
   font-size: 1.2em;
   margin: 10px 0;
+  color: #fff;
 }
 
 .btn {
