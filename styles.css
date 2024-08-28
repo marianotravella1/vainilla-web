@@ -1,10 +1,18 @@
+:root {
+  --primary-color: #333;
+  --secondary-color: #141414;
+  --tertiary-color: #555;
+  --font-color: #fff;
+  --opposite-color: #000;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   margin: 0;
-  color: #fff;
-  background-color: #282828;
+  color: var(--font-color);
+  background-color: var(--secondary-color);
 }
 
 header {
@@ -12,15 +20,14 @@ header {
   justify-content: space-around;
   align-items: center;
   padding: 20px 20px;
-  background-color: #333;
+  background-color: var(--primary-color);
 }
 
 #logo {
   width: 150px;
   height: auto;
   border-radius: 3px;
-  box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.3);
-  border-color: #141414;
+  box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.3); 
 }
 
 nav ul {
@@ -35,10 +42,10 @@ nav ul li {
 }
 
 nav ul li a {
-  background-color: #555;
+  background-color: var(--tertiary-color);
   border-radius: 3px;
   padding: 15px;
-  color: #fff;
+  color: var(--font-color);
   text-decoration: none;
   cursor: pointer;
   &:hover {
@@ -55,7 +62,7 @@ nav ul li a {
 }
 
 main {
-  background-color: black;
+  background-color: var(--opposite-color);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -100,15 +107,15 @@ main {
 }
 
 .btn {
-  color: #fff;
+  color: var(--font-color);
   display: inline-block;
   padding: 10px 20px;
-  background-color: #333;
+  background-color: var(--primary-color);
   text-decoration: none;
   cursor: pointer;
   border-radius: 7px;
   &:hover {
-    background-color: #555;
+    background-color: var(--tertiary-color);
   }
 }
 
@@ -129,7 +136,7 @@ main {
   gap: 20px;
   padding: 20px;
   height: 400px;
-  background-color: #141414;
+  background-color: var(--secondary-color);
   border-radius: 10px;
   overflow: hidden;
 }
@@ -184,13 +191,13 @@ main {
 }
 
 #contact {
-  background-color: #333;
+  background-color: var(--primary-color);
   text-align: center;
   padding: 40px 0;
 }
 
 footer {
-  background-color: #141414;
+  background-color: var(--secondary-color);
   text-align: center;
   padding: 10px 0;
 }
@@ -205,7 +212,7 @@ h2 {
 .about-container p {
   font-size: 2.5rem;
   font-style: italic;
-  color: white
+  color: var(--font-color);
 }
 
 
@@ -214,7 +221,7 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: #141414;
+  background-color: var(--secondary-color);
   padding: 20px;
 }
 
@@ -226,7 +233,7 @@ h2 {
   width: 350px;
   height: 450px;
   padding: 30px 0px;
-  background-color: #333;
+  background-color: var(--primary-color);
   border-radius: 15px;
   text-align: center;
   box-shadow: 3px 5px 10px black;
@@ -258,11 +265,11 @@ h2 {
 }
 
 .boton-importante {
-  background-color: #555;
+  background-color: var(--tertiary-color);
   border-radius: 5px;
   border: none;
   padding: 13px 60px;
-  color: #fff;
+  color: var(--font-color);
   cursor: pointer;
   font-size: large;
   transition: background-color 0.13s, opacity 0.13s;
@@ -276,7 +283,7 @@ h2 {
 }
 
 #history {
-  background-color: #141414;    
+  background-color: var(--secondary-color);    
 }
 
 #history p {
@@ -285,7 +292,7 @@ h2 {
   padding: 20px;
   display: flex;
   justify-content: space-around;
-  background-color: #141414;
+  background-color: var(--secondary-color);
 }
 
 /* CONTACT */
@@ -312,7 +319,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #333;
+  background: var(--primary-color);
   margin: 0;
   padding: 0;
 }
@@ -352,16 +359,16 @@ form {
 }
 
 input::placeholder {
-  color: white;
+  color: var(--font-color);
 }
 
 form input,
 form select,
 form textarea {
   padding: 5px 3px;
-  background-color: black;
-  color: white;
-  border: white solid 1px;
+  background-color: var(--opposite-color);
+  color: var(--font-color);
+  border: var(--font-color) solid 1px;
   border-radius: 4px;
 }
 
